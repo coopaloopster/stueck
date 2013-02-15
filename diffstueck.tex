@@ -49,12 +49,12 @@
 \date{\today}
 
 \begin{abstract}
-    We  demonstrate the one-to-one correspondence between reparametrization invariant effective actions for relativistic  $p$-branes
-    in the flat target space and effective actions for transverse brane perturbations with non-linearly realized Poincare symmetry.
-  Starting with an action with non-linearly realized symmetry we construct the corresponding reparametrization invariant action by introducing
-  the St\"uckelberg fields. They combine with the transverse modes to form a Lorentz vector. The manifest Lorentz symmetry of the reparametrization invariant action
-  follows directly from the non-linearly  realized Lorentz symmetry of the initial action in terms of the physical modes.
-    \end{abstract}
+We  demonstrate the one-to-one correspondence between reparametrization invariant effective actions for relativistic  $p$-branes
+in the flat target space and effective actions for transverse brane perturbations with non-linearly realized Poincare symmetry.
+Starting with an action with non-linearly realized symmetry we construct the corresponding reparametrization invariant action by introducing
+the St\"uckelberg fields. They combine with the transverse modes to form a Lorentz vector. The manifest Lorentz symmetry of the reparametrization invariant action
+follows directly from the non-linearly  realized Lorentz symmetry of the initial action in terms of the physical modes.
+\end{abstract}
 
 \maketitle
 
@@ -63,7 +63,7 @@
 \section{\label{sec:level1}Introduction}
 
 Confinement in quantum chromodynamics (QCD) arises due to formation of
-gluonic flux tubes as nicely visualized by lattice simulations (see, e.g.,  \cite{Bissey:2006bz}).
+gluonic flux tubes as is nicely visualized by lattice simulations (see, e.g.,  \cite{Bissey:2006bz}).
 The dynamics of the transverse oscillations of a flux tube are
 described by the 2D effective field theory of a string. The leading term, known as the
 Nambu-Goto action, is simply the area of the dynamical, effectively two-dimensional surface
@@ -111,8 +111,8 @@ this surface in the bulk, act as
     \delta^{a i}_{NL} X^j =- \epsilon (\delta^{ij}
     \sigma^a + X^i \partial^a X^{j}) \; .
 \end{eqnarray}
-This transformation law implies an infinite number of relations between coefficients $c_i$ in front of individual term in the action (\ref{action}).
-It can be deduced by  noticing that actions of the form (\ref{action}) can be obtained by fixing the static gauge $X^a=\sigma^a$
+This transformation law implies an infinite number of relations between coefficients $c_i$ in front of the individual terms in the action (\ref{action}).
+This can be deduced by  noticing that actions of the form (\ref{action}) can be obtained by fixing to the static gauge $X^a=\sigma^a$
 in the reparametrization invariant action (\ref{diffaction}). Then the transformation (\ref{NLboost}) is a combination of a boost and a compensating
 diffeomorphism, required to satisfy the gauge condition.
 
@@ -124,7 +124,7 @@ This expectation was challenged recently in Ref.~\cite{Gliozzi:2012cx}, where an
 to construct actions of the form (\ref{action}) invariant under (\ref{NLboost}) starting with an arbitrary monomial "seed" term with a minimal number of $X^i$'s, invariant under
 $\delta^{ai}X^j=-\epsilon \delta^{ij}  \sigma^a $. It is convenient to use the ``scaling" ($d^n X^m \implies n-m$)
 of an operator to label operators that do not mix under (\ref{NLboost}).
-Initially, it was claimed that this way, already at scaling 2, one may construct actions invariant under   (\ref{NLboost}), which do not correspond
+Initially, it was claimed that this way, already at scaling two, one may construct actions invariant under   (\ref{NLboost}), which do not correspond
 to any local geometric invariant. This claim was later revoked in \cite{Meineri:2013ew}, however, the general question remains.
 
 The purpose of this note is to show that the natural expectation is correct and there is a one-to-one correspondence between $p$-brane actions
@@ -142,7 +142,7 @@ replaces all the fields in the action with their image under a diff
     \sigma^{a} \rightarrow \eta^{a}(\vec{\sigma}) \; , \nonumber
 \end{eqnarray}
 and adds $\eta^a$ to the set of dynamical fields. The resulting action is equivalent to the initial one and invariant under
-coordinate transformations, $\sigma \rightarrow \sigma'(\sigma)$, provided the new fields transform as
+coordinate transformations, $\sigma^a \rightarrow \sigma'^a(\vec{\sigma})$, provided the new fields transform as
 \begin{eqnarray}
     \eta^{a} \rightarrow \left( \sigma' \circ \hat{\eta} \right)^{a} \; , \nonumber
 \end{eqnarray}
@@ -222,7 +222,7 @@ To evaluate $\delta^{a i}_L \eta^b(\vec{\sigma})$ let us take the variation of (
     \; ,
     \nonumber
 \end{eqnarray}
-which is nothing else as $ \delta^{a i}_{NL} S \left[ \vec{X}(\vec{\eta}(\vec{\sigma}) )\right]$ and, as a result, vanishes as a consequence of
+which is simply $ \delta^{a i}_{NL} S \left[ \vec{X}(\vec{\eta}(\vec{\sigma}) )\right]$ and, as a result, vanishes as a consequence of
 the non-linearly realized Lorentz symmetry of the original action.
 Thus $\delta^{b i}_L$ is equivalent to $\delta^{b i}_{NL}$ when the linear transformation
 is seen as acting on the appropriate combination of Goldstone and inverse
@@ -239,7 +239,7 @@ of actions invariant under the non-linearly realized  Lorentz (\ref{NLboost}) an
 %****************************
 Given a somewhat abstract nature of the general proof of the previous section, we feel it is instructve to follow in more details
  how the St\"uckelberg procedure works in a concrete example. For simplicity, let us consider the case when the action has scaling zero,
- {\it i.e.} the Lagrangian is a function of the first derivatives $\partial X^i$ only. The first step of the St\"uckelberg procedure results in the action of the form
+ {\it i.e.} the Lagrangian is a function of the first derivatives $\partial X^i$ only. The first step of the St\"uckelberg procedure results in an action of the form
 \begin{eqnarray}
      S[X^i(\vec{\eta}(\vec{\sigma}))] = \int d^p \sigma \mathcal{L}
      (\partial_c X^i (\vec{\eta}(\vec{\sigma}))) \; , \nonumber
@@ -247,7 +247,7 @@ Given a somewhat abstract nature of the general proof of the previous section, w
 where partial derivative $\partial_b$ will always refer to differentiation with respect to the variable of integration
 unless stated otherwise.  To introduce the inverse St\"uckelberg fields, let us change the integration variable,
  $\sigma^a \rightarrow \eta^a(\vec{\sigma}) \equiv \alpha^a$, so that
-$\sigma^a = \xi^a(\vec{\alpha})$. This results in the action of the form
+$\sigma^a = \xi^a(\vec{\alpha})$. This substitution leaves us with
 \begin{eqnarray}
   S[X,\xi]  = \int d^p \alpha\;
    \mathrm{\det}\left({\partial_e \xi^d} \right)
@@ -259,7 +259,7 @@ Let us check that this Lagrangian is invariant under linear Lorentz
 transformations on the vector $X^{\mu}(\vec{\alpha}) \equiv (\xi^a(\vec{\alpha}), X^i(\vec{\alpha}))$, provided the original  action is invariant
 under non-linear Lorentz transformations.
  Under  a rotation
-in the $(aj)$ plane the actions transform as
+in the $(aj)$ plane the action transforms as
 \begin{gather}
 \label{Lvariation}
     \delta^{a j}_{L}S[X] =
@@ -300,7 +300,7 @@ This term becomes
     \mathcal{L}\left( (\partial_c \xi^b)^{-1} \partial_c X^i \right) \delta^{j k} \; .
 \end{equation}
 The $\delta (\partial\xi)$ term in the variation breaks off further into two terms since both the determinant and original
-Lagrangian depend on $\xi$. The differentiation of the determinant along with the variation of the inverse St\"uckelberg
+Lagrangian depend on $\partial \xi$. The differentiation of the determinant along with the variation of the inverse St\"uckelberg
 field yields:
 \begin{equation}
 \label{term2}
@@ -348,7 +348,7 @@ The second term we integrate by parts yielding the following steps:
     \partial^a X^j \mathcal{L}(\partial_b X^i) \rightarrow - X^j \partial^a \mathcal{L}(\partial_b X^i) \nonumber \\
     = - X^i \frac{\partial (\partial_h X^k)}{\partial \xi_a} \frac{\partial}{\partial (\partial_h X^k)} \mathcal{L}(\partial_b X^i) \nonumber \\
 \end{gather}
-Now, if we rename the index $g$ of the third term $h$ and use another Kronecker delta to likewise rename the first term as well,
+Now, if we rename the indices $g$, $l$ of the third term to $h$, $k$ and use another Kronecker delta to likewise rename the $a$ in the first term as well,
 we can factor out the common derivative of the Lagrangian leaving us with at last
 \begin{widetext}
     \begin{eqnarray}
