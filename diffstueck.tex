@@ -50,9 +50,9 @@
 
 \begin{abstract}
 We  demonstrate the one-to-one correspondence between reparametrization invariant effective actions for relativistic  $p$-branes
-in the flat target space and effective actions for transverse brane perturbations with non-linearly realized Poincare symmetry.
+in flat target space and effective actions for transverse brane perturbations with non-linearly realized Poincare symmetry.
 Starting with an action with non-linearly realized symmetry we construct the corresponding reparametrization invariant action by introducing
-the St\"uckelberg fields. They combine with the transverse modes to form a Lorentz vector. The manifest Lorentz symmetry of the reparametrization invariant action
+St\"uckelberg fields. They combine with the transverse modes to form a Lorentz vector. The manifest Lorentz symmetry of the reparametrization invariant action
 follows directly from the non-linearly  realized Lorentz symmetry of the initial action in terms of the physical modes.
 \end{abstract}
 
@@ -62,7 +62,7 @@ follows directly from the non-linearly  realized Lorentz symmetry of the initial
 
 \section{\label{sec:level1}Introduction}
 
-Confinement in quantum chromodynamics (QCD) arises due to formation of
+Confinement in quantum chromodynamics (QCD) arises due to the formation of
 gluonic flux tubes as is nicely visualized by lattice simulations (see, e.g.,  \cite{Bissey:2006bz}).
 The dynamics of the transverse oscillations of a flux tube are
 described by the 2D effective field theory of a string. The leading term, known as the
@@ -85,11 +85,11 @@ etc.
 The worldsheet description is helpful in that we know all
 of the local geometric invariants of embedded 2D surfaces, thus we know the most general
 local action compatible with the Poincar\'e symmetry of the theory, as
-well as diffeomorphism invariance of the worldsheet. On the other hand, as any gauge symmetry, the
+well as diffeomorphism invariance of the worldsheet. On the other hand, as with any gauge symmetry, the
 diff invariance of the theory leaves us with a huge redundancy in our description and obscures the counting of physical degrees of freedom.
  The natural language to describe the string dynamics directly in terms of propagating degrees freedom  is that of Goldstone bosons
  (see, e.g., \cite{Dubovsky:2012sh} for a recent discussion of effective strings from this viewpoint).
- A  straight $p$-brane spontaneously breaks the target space Poincare\'e group $ISO(1,D-1)$ down to the direct product of Poincar\'e
+ A  straight $p$-brane spontaneously breaks the target space Poincar\'e group $ISO(1,D-1)$ down to the direct product of Poincar\'e
  transformations along the $p$-brane and rotations in the transverse hyperplane,
   $ISO(1,p)\times SO(D-p-1)$ . The Goldstone Lagrangian can then be written
 as a derivative expansion of the form
@@ -108,12 +108,13 @@ the $(ai)$ plane, where $a$ labels a hypersurface tangent to the $p$-brane and $
 this surface in the bulk, act as
 \begin{eqnarray}
 \label{NLboost}
-    \delta^{a i}_{NL} X^j =- \epsilon (\delta^{ij}
-    \sigma^a + X^i \partial^a X^{j}) \; .
+    \delta^{a i}_{NL} X^j =- \epsilon (-\delta^{ij}
+    \sigma^a + X^i \partial^a X^{j}) \; ,
 \end{eqnarray}
-This transformation law implies an infinite number of relations between coefficients $c_i$ in front of the individual terms in the action (\ref{action}).
-This can be deduced by  noticing that actions of the form (\ref{action}) can be obtained by fixing to the static gauge $X^a=\sigma^a$
-in the reparametrization invariant action (\ref{diffaction}). Then the transformation (\ref{NLboost}) is a combination of a boost and a compensating
+where the metric is chosen to be $g_{\mu \nu} = \mathrm{diag}(-,+,+,+)$. This transformation law implies an infinite number of relations between
+coefficients $c_i$ in front of the individual terms in the action (\ref{action}). This can be deduced by  noticing that actions
+of the form (\ref{action}) can be obtained by fixing to the static gauge $X^a=\sigma^a$ in the reparametrization invariant action
+(\ref{diffaction}). Then the transformation (\ref{NLboost}) is a combination of a boost and a compensating
 diffeomorphism, required to satisfy the gauge condition.
 
 In principle, one may consider actions of the form (\ref{action}) invariant under (\ref{NLboost}) on its own  without any reference to  gauge fixing.
@@ -122,7 +123,7 @@ invariant under the linearly realized Poincar\'e group.
 
 This expectation was challenged recently in Ref.~\cite{Gliozzi:2012cx}, where an inductive procedure was developed
 to construct actions of the form (\ref{action}) invariant under (\ref{NLboost}) starting with an arbitrary monomial "seed" term with a minimal number of $X^i$'s, invariant under
-$\delta^{ai}X^j=-\epsilon \delta^{ij}  \sigma^a $. It is convenient to use the ``scaling" ($d^n X^m \implies n-m$)
+$\delta^{ai}X^j=\epsilon \delta^{ij}  \sigma^a $. It is convenient to use the ``scaling" ($d^n X^m \implies n-m$)
 of an operator to label operators that do not mix under (\ref{NLboost}).
 Initially, it was claimed that this way, already at scaling two, one may construct actions invariant under   (\ref{NLboost}), which do not correspond
 to any local geometric invariant. This claim was later revoked in \cite{Meineri:2013ew}, however, the general question remains.
@@ -195,7 +196,7 @@ both $X^i$ and $\xi^a(\vec{\sigma})$ transforming as scalars.
  Lorentz symmetry with $X^i$ and $\xi^a$ transforming as components of a Lorentz vector $X^\mu=(\xi^a, X^i)$,
 \begin{eqnarray}
 \label{linearvar}
-    \delta_{L}^{ai} X^{\mu} = -\epsilon (\delta^{i \mu} \xi^a + \delta^{a \mu} X^i) \; .
+    \delta_{L}^{ai} X^{\mu} = -\epsilon (-\xi^a g^{i \mu} + X^i g^{a \mu} ) \; .
 \end{eqnarray}
 To prove this, lets us  show  that
 $\delta_{NL} S[X(\vec{\eta}(\vec{\sigma}))] = 0$ implies $\delta_{L} S[X(\vec{\sigma}),\xi(\vec{\sigma})] = 0$.
@@ -244,15 +245,20 @@ Given a somewhat abstract nature of the general proof of the previous section, w
      S[X^i(\vec{\eta}(\vec{\sigma}))] = \int d^p \sigma \mathcal{L}
      (\partial_c X^i (\vec{\eta}(\vec{\sigma}))) \; , \nonumber
 \end{eqnarray}
-where partial derivative $\partial_b$ will always refer to differentiation with respect to the variable of integration
+where partial derivatives $\partial_c$ will always refer to differentiation with respect to the variable of integration
 unless stated otherwise.  To introduce the inverse St\"uckelberg fields, let us change the integration variable,
  $\sigma^a \rightarrow \eta^a(\vec{\sigma}) \equiv \alpha^a$, so that
-$\sigma^a = \xi^a(\vec{\alpha})$. This substitution leaves us with
+$\sigma^a = \xi^a(\vec{\alpha})$. To make sense of the argument of the Lagrangian in these variables, we introduce the inverse
+Jacobian of this transformation
+\begin{equation}
+    J(\vec{\alpha})^c_b \equiv [(\partial \xi)^{-1}]^c_b \; ,
+\end{equation}
+where $-1$ is understood as inverting the matrix of first partials of the variables $\vec{\xi}$.
+This substitution leaves us with
 \begin{eqnarray}
   S[X,\xi]  = \int d^p \alpha\;
    \mathrm{\det}\left({\partial_e \xi^d} \right)
-    \mathcal{L}\left( \left({\partial_c \xi^b(\vec{\alpha})} \right)^{-1}
-   {\partial_c X^i(\vec{\alpha})} \right)
+   \mathcal{L}( J(\vec{\alpha})^c_b \partial_c X^i(\vec{\alpha}) )
      \; . \nonumber
 \end{eqnarray}
 Let us check that this Lagrangian is invariant under linear Lorentz
@@ -271,97 +277,96 @@ in the $(aj)$ plane the action transforms as
 where
 \begin{eqnarray}
     L(\partial_c \xi^b, \partial_c X^i) = \mathrm{\det}( \partial_e \xi^d )
-    \, \mathcal{L}( ( \partial_c \xi^b(\vec{\alpha}) )^{-1}
-    \partial_c X^i(\vec{\alpha}) )\;.  \nonumber
+    \, \mathcal{L}( J(\vec{\alpha})^c_b \partial_c X^i(\vec{\alpha}) )\;.  \nonumber
 \end{eqnarray}
+For simplicity we'll set the variation parameter $-\epsilon$ to $1$.
+At this point it will be useful to introduce some notation to clean up our calculation.  Let us define
+\begin{equation}
+    \frac{\partial \mathcal{L}(J^c_b \partial_c X^i)}{\partial (J^c_g \partial_c X^l)} \equiv \mathcal{L}_{(g l)} \; . \nonumber
+\end{equation}
+Now we notice the following chain rules, making use of this notation to change the differential operators acting
+on the Lagrangian to be with respect to its argument
+\begin{gather}
+    \frac{\partial}{\partial(\partial_f X^k)} \rightarrow
+    \frac{\partial(J^c_g \partial_c X^l)}{\partial (\partial_f X^k)}
+    \mathcal{L}_{(g l)} = \nonumber \\
+    = J^c_g \delta^f_c \delta^l_k \mathcal{L}_{(g l)}= J^f_g \mathcal{L}_{(g k)} \; ,
+\end{gather}
+as well as
+\begin{gather}
+\label{chainrulexi}
+    \frac{\partial}{\partial (\partial_f \xi^h)} \rightarrow
+    \frac{\partial (J^c_g \partial_c X^l)}{\partial_f \xi^h} \mathcal{L}_{(g l)}
+    = \partial_c X^l (-J^c_h J^f_g)  \mathcal{L}_{(g l)} \; .
+\end{gather}
 The integrand of the first term, using equation (\ref{linearvar}) for
 the linear variation of $X^k$, becomes
 \begin{eqnarray}
     \mathrm{det}(\partial_e \xi^d)
     \frac{\partial \left(
-    \mathcal{L}\left( \left( \partial_b \xi^c (\vec{\alpha}) \right)^{-1}
-    \partial_b X^i(\vec{\alpha}) \right) \right)}{\partial \left(
-    \partial_f X^k \right)} \partial_f \xi^a \delta^{j k} \; . \nonumber
+    \mathcal{L}( J(\vec{\alpha})^c_b \partial_c X^i(\vec{\alpha}) )
+    \right)}{\partial \left(  \partial_f X^k \right)} \partial_f \xi^a \delta^{j k} \; . \nonumber
 \end{eqnarray}
-We would like the differential operator acting on the Lagrangian to be with respect to its argument.
-By using the chain rule we change the differential operator
-\begin{eqnarray}
-    \frac{\partial}{\partial (\partial_f X^k) } \rightarrow
-    \frac{\partial \left( \frac{\partial_{c'} X^l (\vec{\alpha})}{\partial_{c'}
-    \xi^g (\vec{\alpha}) } \right)}{\partial ( \partial_f
-    X^k (\vec{\alpha}) ) } \frac{\partial}{\partial \left( \frac{\partial_{c''} X^l
-    (\vec{\alpha}) }{\partial_{c''} \xi^g (\vec{\alpha}) } \right)} \; , \nonumber
-\end{eqnarray}
-This term becomes
+Since $J$ doesn't depend on $\partial X$, using (10) we arrive at
 \begin{equation}
 \label{term1}
-    \mathrm{det} ( \partial_e \xi^d )
-    \frac{\partial}{\partial \left( \frac{\partial_{c''} X^k}{\partial_{c''} \xi^a} \right)}
-    \mathcal{L}\left( (\partial_c \xi^b)^{-1} \partial_c X^i \right) \delta^{j k} \; .
+    \mathrm{det} ( \partial_e \xi^d ) \mathcal{L}_{(a k)} \delta^{j k} \; .
 \end{equation}
 The $\delta (\partial\xi)$ term in the variation breaks off further into two terms since both the determinant and original
-Lagrangian depend on $\partial \xi$. The differentiation of the determinant along with the variation of the inverse St\"uckelberg
-field yields:
+Lagrangian depend on $\partial \xi$. The differentiation of the determinant along with the variation of the inverse
+St\"uckelberg field yields:
 \begin{equation}
 \label{term2}
-    \mathrm{det} ( \partial_e \xi^d ) \left( \frac{\partial_f X^j}{\partial_f \xi^h}
-    \right) \mathcal{L} \left( (\partial_c \xi^b )^{-1} \partial_c X^i \right) \delta^{a h} \; .
+    \mathrm{det} ( \partial_e \xi^d ) J^f_h \partial_f X^j \mathcal{L} \; g^{a h} \; .
 \end{equation}
-The differentiation of the other term, after again using the chain rule to change the differential
-operator to the argument of the Lagrangian, becomes
-\begin{eqnarray}
-    \mathrm{det} ( \partial_e \xi^d )
-    \frac{\partial \left( \frac{\partial_{c'} X^l}{\partial_{c'} \xi^g} \right)}{\partial
-    \left( \partial_f \xi^h \right)}
-    \frac{\partial}{\partial \left( \frac{\partial_{c''} X^l}{\partial_{c''} \xi^g} \right)}
-    \mathcal{L} \left( (\partial_c \xi^b)^{-1} \partial_c X^i \right) \delta^{a h}
-    \partial_f X^k \; . \nonumber
-\end{eqnarray}
-When the smoke clears from the differentiation we have at last:
+The differentiation of the Lagrangian, after implementing (\ref{chainrulexi}) leaves us with
 \begin{eqnarray}
 \label{term3}
-    - \mathrm{det} ( \partial_e \xi^d )
-    \left( \frac{\partial_f X^j}{\partial_f \xi^g} \right)
-    \left( \frac{\partial_{c'} X^l}{\partial_{c'} \xi^h} \right) \times \\ \nonumber
-    \frac{\partial}{\partial \left(
-    \frac{\partial_{c''} X^l}{\partial_{c''} \xi^g} \right)}
-    \mathcal{L}\left( (\partial_c \xi^b)^{-1} \partial_c X^i \right) \delta^{a h} \; .
+    - \mathrm{det} ( \partial_e \xi^d ) ( J^f_g \partial_f X^j )
+    ( J^c_h \partial_{c} X^l ) \mathcal{L}_{(g l)} g^{a h} \; .
 \end{eqnarray}
 The variation of the action is now the sum of equations (\ref{term1}), (\ref{term2}) and (\ref{term3}).  We perform one more change
 of variables to get this into a form that we can juxtapose against the gauge fixed action in order to
 make use of the fact that the original Lagrangian possessed non-linear symmetry.  Since
 every term has $d^p \alpha\;\mathrm{det}\left( \partial \xi/\partial \alpha\right)$ we simply make $\xi$
-our variable of integration. Changing notation $\partial_a \rightarrow \partial/\partial \xi^a $
-and using up the worldsheet Kronecker deltas, the variation becomes:
-\begin{widetext}
-    \begin{equation}
-    \label{diffeq}
-        \int d^p \xi \left(
-        \frac{\partial}{\partial (\partial_a X^k)} \mathcal{L}
-        (\partial_b X^i) \delta^{j k} + \partial^a X^j \mathcal{L}(\partial_b X^i)
-        - \partial_g X^j \partial^a X^l \frac{\partial}{\partial (\partial_g X^l)}
-        \mathcal{L}(\partial_b X^i) \right) \; .
-    \end{equation}
-\end{widetext}
-The second term we integrate by parts yielding the following steps:
+our variable of integration. This also implies $J^a_b \partial_a X^i \rightarrow \partial_b X^i$ when we change notation $\partial_a \rightarrow \partial/\partial \xi^a$.
+The variation becomes:
+\begin{equation}
+\label{diffeq}
+    \int d^p \xi \left(
+    \mathcal{L}_{(a k)} \delta^{j k}
+    + \partial_h X^j \mathcal{L} g^{a h}
+    - \partial_g X^j \partial_h X^l \mathcal{L}_{(g l)} g^{a h} \right) \; .
+\end{equation}
+The second term we integrate by parts:
 \begin{gather}
-    \partial^a X^j \mathcal{L}(\partial_b X^i) \rightarrow - X^j \partial^a \mathcal{L}(\partial_b X^i) \nonumber \\
-    = - X^i \frac{\partial (\partial_h X^k)}{\partial \xi_a} \frac{\partial}{\partial (\partial_h X^k)} \mathcal{L}(\partial_b X^i) \nonumber \\
+    \partial_h X^j \mathcal{L} \rightarrow
+    - X^j \partial_h \mathcal{L} = - X^i \frac{\partial (\partial_d X^k)}{\partial \xi^h}
+    \mathcal{L}_{(d k)} \nonumber \\
+    = - X^j \partial_h \partial_d X^k \mathcal{L}_{(d k)} \; . \nonumber
 \end{gather}
-Now, if we rename the indices $g$, $l$ of the third term to $h$, $k$ and use another Kronecker delta to likewise rename the $a$ in the first term as well,
-we can factor out the common derivative of the Lagrangian leaving us with at last
+Now we raise the derivatives with the metric of the second two terms and rename
+the indices $d$ and $g$ of the second and third term respectively both to $h$. We also
+rename the index $l$ of the last term $k$ and use a Kronecker delta to rename the index
+$a$ of the first term $h$, and alas we can factor out the common derivative of
+the Lagrangian leaving us with
 \begin{widetext}
     \begin{eqnarray}
-        \int d^p \xi \frac{\partial \mathcal{L}(\partial_b X^i)}{\partial \left( \partial_h X^k \right)}
-        \left( \delta^a_h \delta^{j k} - X^j \partial_h \partial^a X^k - \partial_h X^j \partial^a X^k \right) \; . \nonumber
+        -\int d^p \xi \mathcal{L}_{(h k)}
+        \left( - \delta^a_h \delta^{j k} + X^j \partial^a \partial_h X^k
+        + \partial^a X^j \partial_h X^k \right) \; . \nonumber
     \end{eqnarray}
 \end{widetext}
-We notice that the integrand is proportional to equation (\ref{NLboost}).
-Thus any Lagrangian with this non-linear symmetry can be turned into a
+which by equation (\ref{NLboost}) is proportional to
+\begin{equation}
+    \int d^p \xi \mathcal{L}_{(h k)} \; \delta^{a j}_{NL} (\partial_h X^k)
+    = \delta_{NL} S[\vec{X}(\vec{\xi})] \; .
+\end{equation}
+This vanishes by our initial assumption. Thus any Lagrangian with this non-linear symmetry can be turned into a
 manifestly Poincar\'{e} and diffeomorphism invariant action. One simply restores diff invariance
 with St\"uckelberg fields and identifies the appropriate degrees of freedom which combine with the physical
 degrees of freedom to form the embedding coordinates of the worldsheet in spacetime. The original
-Lagrangian can simply be interpreted as the static gauge of this procedure.
+Lagrangian can always be interpreted as the static gauge of this procedure.
 
 As an aside, equation (\ref{diffeq}) shows us that the Nambu-Goto Lagrangian is indeed $\mathcal{L}$ (up to total derivative.) If we assume
 this linear symmetry holds, we note that the integrand in this equation has to vanish. This gives us a differential

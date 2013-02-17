@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  15 FEB 2013 13:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 FEB 2013 18:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -338,19 +338,14 @@ Underfull \hbox (badness 1546) in paragraph at lines 65--75
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 177.
+(amsmath)                 on input line 178.
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 224--236
+Underfull \hbox (badness 1331) in paragraph at lines 225--237
 \OT1/cmr/m/n/10 ishes as a con-se-quence of the non-linearly re-al-ized
  []
 
-[2]
-Overfull \hbox (9.28418pt too wide) in alignment at lines 312--319
- [][][] []
- []
-
-[3] (./diffstueck.bbl
+[2] [3] (./diffstueck.bbl
 Underfull \hbox (badness 3758) in paragraph at lines 102--108
  []\OT1/cmr/m/n/9 S. Dubovsky, JHEP \OT1/cmr/bx/n/9 0410\OT1/cmr/m/n/9 , 076 (2
 004), arXiv:hep-
@@ -358,10 +353,10 @@ Underfull \hbox (badness 3758) in paragraph at lines 102--108
 
 ) [4] (./diffstueck.aux) ) 
 Here is how much of TeX's memory you used:
- 4548 strings out of 493488
- 59682 string characters out of 3141326
- 166769 words of memory out of 3000000
- 7774 multiletter control sequences out of 15000+200000
+ 4549 strings out of 493488
+ 59695 string characters out of 3141326
+ 170091 words of memory out of 3000000
+ 7775 multiletter control sequences out of 15000+200000
  18667 words of font info for 69 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,11n,28p,280b,225s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -371,22 +366,20 @@ c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public
 msfonts/cm/cmex10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmmi10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmmi12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi5.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.p
-fb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on diffstueck.pdf (4 pages, 218569 bytes).
+onts/cm/cmmi7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9
+.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on diffstueck.pdf (4 pages, 202251 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
