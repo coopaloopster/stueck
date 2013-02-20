@@ -81,7 +81,7 @@ Here the worldsheet metric $h_{ab}$, extrinsic curvature $K^i_{ab}$ and all high
 \[
 h_{ab}=\partial_a X^\mu\partial_bX_\mu\;,
 \]
-etc.
+Where the bulk inner product is chosen to be $g_{\mu \nu} = \mathrm{diag}(-,+,+,+)$. tc.
 The worldsheet description is helpful in that we know all
 of the local geometric invariants of embedded 2D surfaces, thus we know the most general
 local action compatible with the Poincar\'e symmetry of the theory, as
@@ -108,11 +108,10 @@ the $(ai)$ plane, where $a$ labels a hypersurface tangent to the $p$-brane and $
 this surface in the bulk, act as
 \begin{eqnarray}
 \label{NLboost}
-    \delta^{a i}_{NL} X^j =- \epsilon (-\delta^{ij}
-    \sigma^a + X^i \partial^a X^{j}) \; ,
+\delta_{NL} X^j = - \epsilon_{a j} (\delta^{ij} \sigma^a + X^i \partial^a X^{j}) \equiv -\epsilon_{aj}\delta^{aj}_{NL} X^j \; ,
 \end{eqnarray}
-where the metric is chosen to be $g_{\mu \nu} = \mathrm{diag}(-,+,+,+)$. This transformation law implies an infinite number of relations between
-coefficients $c_i$ in front of the individual terms in the action (\ref{action}). This can be deduced by  noticing that actions
+This transformation law implies an infinite number of relations between
+coefficients $c_i$ in front of the individual terms in the action (\ref{action}). This can be deduced by noticing that actions
 of the form (\ref{action}) can be obtained by fixing to the static gauge $X^a=\sigma^a$ in the reparametrization invariant action
 (\ref{diffaction}). Then the transformation (\ref{NLboost}) is a combination of a boost and a compensating
 diffeomorphism, required to satisfy the gauge condition.
@@ -196,11 +195,11 @@ both $X^i$ and $\xi^a(\vec{\sigma})$ transforming as scalars.
  Lorentz symmetry with $X^i$ and $\xi^a$ transforming as components of a Lorentz vector $X^\mu=(\xi^a, X^i)$,
 \begin{eqnarray}
 \label{linearvar}
-    \delta_{L}^{ai} X^{\mu} = -\epsilon (-\xi^a g^{i \mu} + X^i g^{a \mu} ) \; .
+\delta_{L} X^{\mu} = -\epsilon_{a i} (-\xi^a g^{i \mu} + X^i g^{a \mu} ) \equiv -\epsilon_{a i} \delta^{a i}_L X^{\mu} \; .
 \end{eqnarray}
 To prove this, lets us  show  that
 $\delta_{NL} S[X(\vec{\eta}(\vec{\sigma}))] = 0$ implies $\delta_{L} S[X(\vec{\sigma}),\xi(\vec{\sigma})] = 0$.
-The latter variation is equal to
+The latter variation is proportional to
 \begin{gather}
 \label{var}
  {\delta S[X^i(\eta(\vec{\sigma}))]\over \delta X^i}
@@ -217,10 +216,8 @@ To evaluate $\delta^{a i}_L \eta^b(\vec{\sigma})$ let us take the variation of (
     After plugging (\ref{etavar}) and (\ref{linearvar}) into the variation (\ref{var}) and making use of the chain rule the variation
      (\ref{var}) takes the form
 \begin{eqnarray}
- {\delta S[X^i(\eta(\vec{\sigma}))]\over \delta X^i} \left( -\delta^{i j} \sigma^a + X^i(\vec{\eta}(\vec{\sigma})) \,
-    \frac{\partial X^j(\vec{\eta}(\vec{\sigma}))}{\partial \sigma_a} \right)
-    %=    \delta^{bi}_{NL} X^j(\vec{\eta}(\vec{\sigma}))
-    \; ,
+ {\delta S[X^i(\eta(\vec{\sigma}))]\over \delta X^i} \left( \delta^{i j} \sigma^a + X^i(\vec{\eta}(\vec{\sigma})) \,
+    \frac{\partial X^j(\vec{\eta}(\vec{\sigma}))}{\partial \sigma_a} \right) \; ,
     \nonumber
 \end{eqnarray}
 which is simply $ \delta^{a i}_{NL} S \left[ \vec{X}(\vec{\eta}(\vec{\sigma}) )\right]$ and, as a result, vanishes as a consequence of
@@ -279,7 +276,6 @@ where
     L(\partial_c \xi^b, \partial_c X^i) = \mathrm{\det}( \partial_e \xi^d )
     \, \mathcal{L}( J(\vec{\alpha})^c_b \partial_c X^i(\vec{\alpha}) )\;.  \nonumber
 \end{eqnarray}
-For simplicity we'll set the variation parameter $-\epsilon$ to $1$.
 At this point it will be useful to introduce some notation to clean up our calculation.  Let us define
 \begin{equation}
     \frac{\partial \mathcal{L}(J^c_b \partial_c X^i)}{\partial (J^c_g \partial_c X^l)} \equiv \mathcal{L}_{(g l)} \; . \nonumber
@@ -360,7 +356,7 @@ the Lagrangian leaving us with
 which by equation (\ref{NLboost}) is proportional to
 \begin{equation}
     \int d^p \xi \mathcal{L}_{(h k)} \; \delta^{a j}_{NL} (\partial_h X^k)
-    = \delta_{NL} S[\vec{X}(\vec{\xi})] \; .
+    = \delta^{a j}_{NL} S[\vec{X}(\vec{\xi})] \; .
 \end{equation}
 This vanishes by our initial assumption. Thus any Lagrangian with this non-linear symmetry can be turned into a
 manifestly Poincar\'{e} and diffeomorphism invariant action. One simply restores diff invariance
@@ -368,18 +364,21 @@ with St\"uckelberg fields and identifies the appropriate degrees of freedom whic
 degrees of freedom to form the embedding coordinates of the worldsheet in spacetime. The original
 Lagrangian can always be interpreted as the static gauge of this procedure.
 
-As an aside, if we knew that our initial Lagrangian had to be invariant with respect to linear LTs then equation (\ref{diffeq})
-provides us with a differential equation for $\mathcal{L}$.  The integral would have to vanish meaning the integrand was
-proportional to $\partial^a X^j$.  Equivalently, by shifting $\mathcal{L}$ by a meaningless constant, we can cancel this total
-derivative by noticing that only the second term in (\ref{diffeq}) sees this correction and picks up exactly this total derivative.
+As an aside, if we knew that our initial Lagrangian had to be invariant with respect to linear Lorentz transformations
+then equation (\ref{diffeq}) provides us with a differential equation for $\mathcal{L}$.  The integral would have to
+vanish meaning the integrand was proportional to a linear combination of $\partial^a X^j$ that satisfies the required symmetries
+of the Goldstone Lagrangian.  Equivalently, by shifting $\mathcal{L}$ by a
+meaningless constant, we can cancel this total derivative by noticing that only the second term in (\ref{diffeq}) sees
+this correction and we pick up exactly the allowed form of the total derivative, which we can tune accordingly.
 To solve this differential equation, we can write the Lagrangian as
 \begin{equation}
     \mathcal{L}(\partial_c X^k) = \sum_{c, k} \sum_n a^{(c, k)}_n (\partial_c X^k)^n \; . \nonumber
 \end{equation}
-The derivatives then provide us with recurrences relations between the powers of $\partial_c X^k$ in the argument of the Lagrangian.
-The resummation of these terms leads to the geometric expression for the area of the $p$-brane.  This is another way to express the
-diagrammatic derivation given in \cite{Gliozzi:2012cx}. For the $0$-brane, better known as the relativistic point particle, this
-differential equation has the form:
+again, noting that the coefficients $a_n^{(c k)}$ aren't completely arbitrary in $c$ and $k$, since the Lagrangian still must
+respect the manifest $ISO(1,p) \times SO(D-p-1)$ symmetry. The derivatives and products of $\partial X$ then provide us with
+recurrences relations between the powers of $\partial_c X^k$ in the argument of the Lagrangian. The resummation of these terms
+is precisely the procedure in \cite{Gliozzi:2012cx} to show that $\mathcal{L}$ is the invariant area of the $p$-brane.
+As a trivial example, for the $0$-brane, better known as the relativistic point particle, this differential equation has the form:
 \begin{equation}
     -\mathcal{L}'(\dot{x}(t)) - \dot{x}(t) \mathcal{L}(\dot{x}(t)) + \dot{x}(t)^2 \mathcal{L}'(\dot{x}(t)) = 0 \; . \nonumber
 \end{equation}
