@@ -368,11 +368,26 @@ with St\"uckelberg fields and identifies the appropriate degrees of freedom whic
 degrees of freedom to form the embedding coordinates of the worldsheet in spacetime. The original
 Lagrangian can always be interpreted as the static gauge of this procedure.
 
-As an aside, equation (\ref{diffeq}) shows us that the Nambu-Goto Lagrangian is indeed $\mathcal{L}$ (up to total derivative.) If we assume
-this linear symmetry holds, we note that the integrand in this equation has to vanish. This gives us a differential
-equation for $\mathcal{L}$ and the solution to this is Nambu-Goto (up to a constant factor.) Also, if we write the Lagrangian
-as a power series in $\partial_b X^i (\vec{\sigma})$ This differential equation yields the recurrence relation that
-characterizes the resummation procedure of \cite{Gliozzi:2012cx} for scaling zero.
+As an aside, if we knew that our initial Lagrangian had to be invariant with respect to linear LTs then equation (\ref{diffeq})
+provides us with a differential equation for $\mathcal{L}$.  The integral would have to vanish meaning the integrand was
+proportional to $\partial^a X^j$.  Equivalently, by shifting $\mathcal{L}$ by a meaningless constant, we can cancel this total
+derivative by noticing that only the second term in (\ref{diffeq}) sees this correction and picks up exactly this total derivative.
+To solve this differential equation, we can write the Lagrangian as
+\begin{equation}
+    \mathcal{L}(\partial_c X^k) = \sum_{c, k} \sum_n a^{(c, k)}_n (\partial_c X^k)^n \; . \nonumber
+\end{equation}
+The derivatives then provide us with recurrences relations between the powers of $\partial_c X^k$ in the argument of the Lagrangian.
+The resummation of these terms leads to the geometric expression for the area of the $p$-brane.  This is another way to express the
+diagrammatic derivation given in \cite{Gliozzi:2012cx}. For the $0$-brane, better known as the relativistic point particle, this
+differential equation has the form:
+\begin{equation}
+    -\mathcal{L}'(\dot{x}(t)) - \dot{x}(t) \mathcal{L}(\dot{x}(t)) + \dot{x}(t)^2 \mathcal{L}'(\dot{x}(t)) = 0 \; . \nonumber
+\end{equation}
+It can be easily shown that the Nambu Goto Lagrangian solves this differential equation
+\begin{equation}
+    \mathcal{L}(\dot{x}(t)) = \sqrt{-1 + \dot{x}(t)^2} \; . \nonumber
+\end{equation}
 
 \bibliography{diffstueck}
+
 \end{document}
