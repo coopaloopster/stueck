@@ -1,44 +1,13 @@
 %****** Inverting the Diffeomorphism Gauge fixing for the Worldsheet ******
 \documentclass[%
  reprint,
-%superscriptaddress,
-%groupedaddress,
-%unsortedaddress,
-%runinaddress,
-%frontmatterverbose,
-%preprint,
-%showpacs,preprintnumbers,
-%nofootinbib,
-%nobibnotes,
-%bibnotes,
  amsmath,amssymb,
  aps,
-%pra,
-%prb,
-%rmp,
-%prstab,
-%prstper,
-%floatfix,
 ]{revtex4-1}
-
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
-%\usepackage{hyperref}% add hypertext capabilities
-%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
-%\linenumbers\relax % Commence numbering lines
-
-%\usepackage[showframe,%Uncomment any one of the following lines to test
-%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
-%%text={7in,10in},centering,
-%%margin=1.5in,
-%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
-%%height=10in,a5paper,hmargin={3cm,0.8in},
-%]{geometry}
-
 \begin{document}
-
-%\preprint{APS/123-QED}
 
 \title{St\"uckelberg Fields on the Effective $p$-brane}
 
@@ -50,10 +19,10 @@
 
 \begin{abstract}
 We  demonstrate the one-to-one correspondence between reparametrization invariant effective actions for relativistic  $p$-branes
-in flat target space and effective actions for transverse brane perturbations with non-linearly realized Poincare symmetry.
+in flat target space and effective actions for transverse brane perturbations with non-linearly realized Poincar\'e symmetry.
 Starting with an action with non-linearly realized symmetry we construct the corresponding reparametrization invariant action by introducing
 St\"uckelberg fields. They combine with the transverse modes to form a Lorentz vector. The manifest Lorentz symmetry of the reparametrization invariant action
-follows directly from the non-linearly  realized Lorentz symmetry of the initial action in terms of the physical modes.
+follows directly from the non-linearly realized Lorentz symmetry of the initial action in terms of the physical modes.
 \end{abstract}
 
 \maketitle
@@ -63,14 +32,13 @@ follows directly from the non-linearly  realized Lorentz symmetry of the initial
 \section{\label{sec:level1}Introduction}
 
 Confinement in quantum chromodynamics (QCD) arises due to the formation of
-gluonic flux tubes as is nicely visualized by lattice simulations (see, e.g.,  \cite{Bissey:2006bz}).
+gluonic flux tubes as is nicely visualized by lattice simulations (see, e.g., \cite{Bissey:2006bz}).
 The dynamics of the transverse oscillations of a flux tube are
 described by the 2D effective field theory of a string. The leading term, known as the
 Nambu-Goto action, is simply the area of the dynamical, effectively two-dimensional surface
 of the tube, known as the worldsheet. In the QCD case, where the effective string has a finite
 width associated to it, there are higher order terms given by combinations of the first
-and second fundamental form associated with the induced metric
- of the worldsheet in an
+and second fundamental form associated with the induced metric of the worldsheet in an
 ambient spacetime,
 \begin{eqnarray}
 \label{diffaction}
@@ -81,12 +49,12 @@ Here the worldsheet metric $h_{ab}$, extrinsic curvature $K^i_{ab}$ and all high
 \[
 h_{ab}=\partial_a X^\mu\partial_bX_\mu\;,
 \]
-Where the bulk inner product is chosen to be $g_{\mu \nu} = \mathrm{diag}(-,+,\cdots,+)$.
-The worldsheet description is helpful in that we know all
+where the bulk metric is chosen to be $g_{\mu \nu} = \mathrm{diag}(-,+,\cdots,+)$.
+This reparametrization invariant worldsheet description is helpful in that we know all
 of the local geometric invariants of embedded 2D surfaces, thus we know the most general
 local action compatible with the Poincar\'e symmetry of the theory, as
 well as diffeomorphism invariance of the worldsheet. On the other hand, as with any gauge symmetry, the
-diff invariance of the theory leaves us with a huge redundancy in our description and obscures the counting of physical degrees of freedom.
+diffeomorphism invariance of the theory leaves us with a huge redundancy in our description and obscures the counting of physical degrees of freedom.
  The natural language to describe the string dynamics directly in terms of propagating degrees freedom  is that of Goldstone bosons
  (see, e.g., \cite{Dubovsky:2012sh} for a recent discussion of effective strings from this viewpoint).
  A  straight $p$-brane spontaneously breaks the target space Poincar\'e group $ISO(1,D-1)$ down to the direct product of Poincar\'e
@@ -95,23 +63,22 @@ diff invariance of the theory leaves us with a huge redundancy in our descriptio
 as a derivative expansion of the form
 \begin{eqnarray}
 \label{action}
-    S =  \int d^d \sigma (c_0 \partial_a X^i \partial^a X_i +
+    S =  \int d^d \sigma (c_1 \partial_a X^i \partial^a X_i +
     c_2 (\partial_a X^i \partial^a X_i)^2 +  \\
     c_3 (\partial_a X^i \partial_b X_i)(\partial^a X^j \partial^b X_j) + \cdots \; , \nonumber
 \end{eqnarray}
-where $X^i$ are
-the dynamical degrees of freedom  corresponding to  $(D-p-1)$ transverse oscillations
+where $X^i$ are the dynamical degrees of freedom  corresponding to  $(D-p-1)$ transverse oscillations
 of the brane. Both transverse translations and off-diagonal generators of the target space
 Lorentz group are realized non-linearly. Non-linearly realized translations imply the shift invariance of the action (\ref{action}).
  Non-linearly realized rotations/boosts in the
-the $(ai)$ plane, where $a$ labels a hypersurface tangent to the $p$-brane and $i$ is normal to
+the $(aj)$ plane, where $a$ labels a hypersurface tangent to the $p$-brane and $j$ is normal to
 this surface in the bulk, act as
 \begin{eqnarray}
 \label{NLboost}
-\delta_{NL} X^j = - \epsilon_{a j} (\delta^{ij} \sigma^a + X^i \partial^a X^{j}) \equiv -\epsilon_{aj}\delta^{aj}_{NL} X^j \; ,
+\delta_{NL} X^i = - \epsilon_{a j} (\delta^{ij} \sigma^a + X^j \partial^a X^{i}) \equiv -\epsilon_{aj}\delta^{aj}_{NL} X^i \; ,
 \end{eqnarray}
 This transformation law implies an infinite number of relations between
-coefficients $c_i$ in front of the individual terms in the action (\ref{action}). This can be deduced by noticing that actions
+coefficients $c_i$ in front of the individual terms in the action (\ref{action}). This form of the transformation can be deduced by noticing that actions
 of the form (\ref{action}) can be obtained by fixing to the static gauge $X^a=\sigma^a$ in the reparametrization invariant action
 (\ref{diffaction}). Then the transformation (\ref{NLboost}) is a combination of a boost and a compensating
 diffeomorphism, required to satisfy the gauge condition.
@@ -122,7 +89,7 @@ invariant under the linearly realized Poincar\'e group.
 
 This expectation was challenged recently in Ref.~\cite{Gliozzi:2012cx}, where an inductive procedure was developed
 to construct actions of the form (\ref{action}) invariant under (\ref{NLboost}) starting with an arbitrary monomial "seed" term with a minimal number of $X^i$'s, invariant under
-$\delta^{ai}X^j= \delta^{ij}  \sigma^a $. It is convenient to use the ``scaling" ($d^n X^m \implies n-m$)
+$\delta^{aj}X^i= \delta^{ij}  \sigma^a $. It is convenient to use the ``scaling" ($d^n X^m \implies n-m$)
 of an operator to label operators that do not mix under (\ref{NLboost}).
 Initially, it was claimed that this way, already at scaling two, one may construct actions invariant under   (\ref{NLboost}), which do not correspond
 to any local geometric invariant. This claim was later revoked in \cite{Meineri:2013ew}, however, the general question remains.
@@ -136,8 +103,8 @@ manifest $D$-dimensional Poincar\'e invariance. That is, the non-linear invarian
 Lagrangian translates into a linear Poincar\'e symmetry of the St\"uckelberg action.
 We follow the variation of the St\"uckelberg procedure described in
 \cite{Dubovsky:2004sg}, which is most convenient for our purposes.
-Namely, to introduce  diff invariance in any theory, one
-replaces all the fields in the action with their image under a diff
+Namely, to introduce  diffeomorphism invariance in any theory, one
+replaces all the fields in the action with their image under a diffeomorphism
 \begin{eqnarray}
     \sigma^{a} \rightarrow \eta^{a}(\vec{\sigma}) \; , \nonumber
 \end{eqnarray}
@@ -172,20 +139,18 @@ We start with  the action (\ref{action}), depending
 only on the physical transverse degrees of freedom of the worldsheet (``Goldstone fields").
 As explained above, it should be invariant under the non-linearly realized Lorentz symmetry, i.e.
 \begin{eqnarray}
-    \delta^{a i}_{NL} S \left[ \vec{X}(\vec{\sigma}) \right]
-    \equiv \int d^p \sigma
- {\delta S[ \vec{X}(\vec{\sigma}) ]\over \delta X^j}
- %   \frac{\partial \mathcal{L}
-     %   (\vec{X}(\vec{\sigma}))}{\partial X^j(\vec{\sigma})}
-        \delta^{a i}_{NL} X^j(\vec{\sigma}) \nonumber = 0 \; , \nonumber
+    \delta^{a j}_{NL} S \left[ \vec{X}(\vec{\sigma}) \right]
+    =
+    \frac{\delta S[ \vec{X}(\vec{\sigma}) ]}{\delta X^i}
+        \delta^{a j}_{NL} X^i(\vec{\sigma}) \nonumber = 0 \; , \nonumber
 \end{eqnarray}
-where $\delta^{ai}_{NL} X^j(\vec{\sigma})$ is given by equation (\ref{NLboost}).
+where $\delta^{aj}_{NL} X^i(\vec{\sigma})$ is given by equation (\ref{NLboost}).
 Our goal is to check that this invariance translates into the invariance under the linear Lorentz transformations after the
 reparametrization invariance is (re)introduced through the St\"uckelberg trick.
 The  St\"uckelberg prescription is to replace the action with a new
 one defined as
 \begin{eqnarray}
-    S[X^j(\vec{\sigma})] \rightarrow S[X^j(\vec{\eta}(\vec{\sigma}))] \; . \nonumber
+    S[\vec{X}(\vec{\sigma})] \rightarrow S[\vec{X}(\vec{\eta}(\vec{\sigma}))] \; . \nonumber
 \end{eqnarray}
 This new action is a functional depending on $(D-p-1)$ Goldstones fields $X^i$ and $(p+1)$ St\"uckelberg fields $\eta^a$.
 Equivalently, we can make a field redefinition and treat  this action as a functional depending on  the Goldstone fields $X^i$ and
@@ -195,34 +160,34 @@ both $X^i$ and $\xi^a(\vec{\sigma})$ transforming as scalars.
  Lorentz symmetry with $X^i$ and $\xi^a$ transforming as components of a Lorentz vector $X^\mu=(\xi^a, X^i)$,
 \begin{eqnarray}
 \label{linearvar}
-\delta_{L} X^{\mu} = -\epsilon_{a i} (-\xi^a g^{i \mu} + X^i g^{a \mu} ) \equiv -\epsilon_{a i} \delta^{a i}_L X^{\mu} \; .
+    \delta_{L} X^{\mu} = -\epsilon_{a j} (-\xi^a g^{j \mu} + X^j g^{a \mu} ) \equiv -\epsilon_{a j} \delta^{a j}_L X^{\mu} \; .
 \end{eqnarray}
 To prove this, lets us  show  that
-$\delta_{NL} S[X(\vec{\eta}(\vec{\sigma}))] = 0$ implies $\delta_{L} S[X(\vec{\sigma}),\xi(\vec{\sigma})] = 0$.
-The latter variation is proportional to
+$\delta_{NL} S[X(\vec{\eta}(\vec{\sigma}))] = 0$ implies $\delta_{L} S[\vec{X}(\vec{\sigma}),\vec{\xi}(\vec{\sigma})] = 0$.
+The latter variation is equal to
 \begin{gather}
 \label{var}
- {\delta S[X^i(\eta(\vec{\sigma}))]\over \delta X^i}
-  \left(\delta^{a i}_L X^j(\vec{\eta}(\vec{\sigma})) +
-    \frac{\partial X^j (\vec{\eta}(\vec{\sigma}))}{\partial \eta^b(\vec{\sigma})}
-    \delta^{a i}_L \eta^b(\vec{\sigma})\right) \; .
+-\epsilon_{a j} {\delta S[\vec{X}(\eta(\vec{\sigma}))]\over \delta X^i}
+\left(\delta^{a j}_L X^i(\vec{\eta}(\vec{\sigma})) +
+    \frac{\partial X^i (\vec{\eta}(\vec{\sigma}))}{\partial \eta^b(\vec{\sigma})}
+    \delta^{a j}_L \eta^b(\vec{\sigma})\right) \; .
 \end{gather}
-To evaluate $\delta^{a i}_L \eta^b(\vec{\sigma})$ let us take the variation of (\ref{etadef}), which gives
+To evaluate $\delta^{a j}_L \eta^b(\vec{\sigma})$ let us take the variation of (\ref{etadef}), which gives
 \begin{eqnarray}
 \label{etavar}
     - \frac{\partial \eta^b (\vec{\sigma})}{\partial \sigma^c} \delta \xi^c (\vec{\eta}(\vec{\sigma}))
     = \delta \eta^b(\vec{\sigma}) \; .
-    \end{eqnarray}
-    After plugging (\ref{etavar}) and (\ref{linearvar}) into the variation (\ref{var}) and making use of the chain rule the variation
-     (\ref{var}) takes the form
+\end{eqnarray}
+After plugging (\ref{etavar}) and (\ref{linearvar}) into the variation (\ref{var}) and making use of the chain rule the variation
+(\ref{var}) takes the form
 \begin{eqnarray}
- {\delta S[X^i(\eta(\vec{\sigma}))]\over \delta X^i} \left( \delta^{i j} \sigma^a + X^i(\vec{\eta}(\vec{\sigma})) \,
-    \frac{\partial X^j(\vec{\eta}(\vec{\sigma}))}{\partial \sigma_a} \right) \; ,
+    \epsilon_{a j} {\delta S[\vec{X}(\eta(\vec{\sigma}))]\over \delta X^i} \left( \delta^{i j} \sigma^a + X^j(\vec{\eta}(\vec{\sigma})) \,
+    \frac{\partial X^i(\vec{\eta}(\vec{\sigma}))}{\partial \sigma_a} \right) \; ,
     \nonumber
 \end{eqnarray}
-which is simply $ \delta^{a i}_{NL} S \left[ \vec{X}(\vec{\eta}(\vec{\sigma}) )\right]$ and, as a result, vanishes as a consequence of
+which is simply $ \epsilon_{a j} \delta^{a j}_{NL} S \left[ \vec{X}(\vec{\eta}(\vec{\sigma}) )\right]$ and, as a result, vanishes as a consequence of
 the non-linearly realized Lorentz symmetry of the original action.
-Thus $\delta^{b i}_L$ is equivalent to $\delta^{b i}_{NL}$ when the linear transformation
+Thus $\delta^{a j}_L$ is equivalent to $\delta^{a j}_{NL}$ when the linear transformation
 is seen as acting on the appropriate combination of Goldstone and inverse
 St\"uckelberg fields.
 This completes the proof that a \emph{generic} effective Lagrangian invariant under non-linear Lorentz symmetry can
@@ -235,11 +200,11 @@ of actions invariant under the non-linearly realized  Lorentz (\ref{NLboost}) an
 %****************************
 \section{A Concrete Example}
 %****************************
-Given a somewhat abstract nature of the general proof of the previous section, we feel it is instructve to follow in more details
+Given the somewhat abstract nature of the general proof of the previous section, we feel it is instructve to follow in more details
  how the St\"uckelberg procedure works in a concrete example. For simplicity, let us consider the case when the action has scaling zero,
  {\it i.e.} the Lagrangian is a function of the first derivatives $\partial X^i$ only. The first step of the St\"uckelberg procedure results in an action of the form
 \begin{eqnarray}
-     S[X^i(\vec{\eta}(\vec{\sigma}))] = \int d^p \sigma \mathcal{L}
+    S[\vec{X}(\vec{\eta}(\vec{\sigma}))] = \int d^p \sigma \mathcal{L}
      (\partial_c X^i (\vec{\eta}(\vec{\sigma}))) \; , \nonumber
 \end{eqnarray}
 where partial derivatives $\partial_c$ will always refer to differentiation with respect to the variable of integration
@@ -253,19 +218,18 @@ Jacobian of this transformation
 where $-1$ is understood as inverting the matrix of first partials of the variables $\vec{\xi}$.
 This substitution leaves us with
 \begin{eqnarray}
-  S[X,\xi]  = \int d^p \alpha\;
+    S[\vec{X},\vec{\xi}]  = \int d^p \alpha\;
    \mathrm{\det}\left({\partial_e \xi^d} \right)
    \mathcal{L}( J(\vec{\alpha})^c_b \partial_c X^i(\vec{\alpha}) )
      \; . \nonumber
 \end{eqnarray}
 Let us check that this Lagrangian is invariant under linear Lorentz
-transformations on the vector $X^{\mu}(\vec{\alpha}) \equiv (\xi^a(\vec{\alpha}), X^i(\vec{\alpha}))$, provided the original  action is invariant
-under non-linear Lorentz transformations.
- Under  a rotation
-in the $(aj)$ plane the action transforms as
+transformations on the vector $X^{\mu}(\vec{\alpha}) \equiv (\xi^a(\vec{\alpha}), X^i(\vec{\alpha}))$,
+provided the original  action is invariant under non-linear Lorentz transformations. Under  a rotation
+in the $(aj)$ plane (omitting for brevity the parameter $\epsilon_{a j}$) the action transforms as
 \begin{gather}
 \label{Lvariation}
-    \delta^{a j}_{L}S[X] =
+\delta^{a j}_{L}S[\vec{X},\vec{\xi}] =
     \int d^p \alpha \frac{\partial L(\partial_c \xi^b, \partial_c X^i)}{\partial(\partial_f X^k)}
     \delta^{a j}_{L} (\partial_f X^k)  \\
     + \frac{\partial L(\partial_c \xi^b, \partial_c X^i)}{\partial(\partial_f \xi^h)}
@@ -356,10 +320,10 @@ the Lagrangian leaving us with
 which by equation (\ref{NLboost}) is proportional to
 \begin{equation}
     \int d^p \xi \mathcal{L}_{(h k)} \; \delta^{a j}_{NL} (\partial_h X^k)
-    = \delta^{a j}_{NL} S[\vec{X}(\vec{\xi})] \; .
+    = \delta^{a j}_{NL} S[\vec{X}] \; .
 \end{equation}
 This vanishes by our initial assumption. Thus any Lagrangian with this non-linear symmetry can be turned into a
-manifestly Poincar\'{e} and diffeomorphism invariant action. One simply restores diff invariance
+manifestly Poincar\'{e} and diffeomorphism invariant action. One simply restores diffeomorphism invariance
 with St\"uckelberg fields and identifies the appropriate degrees of freedom which combine with the physical
 degrees of freedom to form the embedding coordinates of the worldsheet in spacetime. The original
 Lagrangian can always be interpreted as the static gauge of this procedure.
@@ -382,7 +346,7 @@ As a trivial example, for the $0$-brane, better known as the relativistic point 
 \begin{equation}
     -\mathcal{L}'(\dot{x}(t)) - \dot{x}(t) \mathcal{L}(\dot{x}(t)) + \dot{x}(t)^2 \mathcal{L}'(\dot{x}(t)) = 0 \; . \nonumber
 \end{equation}
-It can be easily shown that the Nambu Goto Lagrangian solves this differential equation
+It can be easily shown that the Nambu-Goto Lagrangian solves this differential equation
 \begin{equation}
     \mathcal{L}(\dot{x}(t)) = \sqrt{-1 + \dot{x}(t)^2} \; . \nonumber
 \end{equation}
