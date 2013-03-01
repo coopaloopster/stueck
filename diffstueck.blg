@@ -23,46 +23,47 @@ Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
+Warning--missing journal in Aharony:2013ipa
 Warning--missing journal in Meineri:2013ew
-You've used 7 entries,
+You've used 8 entries,
             5847 wiz_defined-function locations,
-            1652 strings with 15707 characters,
-and the built_in function-call counts, 5728 in all, are:
-= -- 328
-> -- 123
-< -- 62
-+ -- 43
-- -- 45
-* -- 891
-:= -- 547
-add.period$ -- 5
-call.type$ -- 7
-change.case$ -- 20
-chr.to.int$ -- 15
-cite$ -- 8
-duplicate$ -- 584
-empty$ -- 377
-format.name$ -- 65
-if$ -- 1054
+            1658 strings with 15851 characters,
+and the built_in function-call counts, 6528 in all, are:
+= -- 378
+> -- 141
+< -- 67
++ -- 49
+- -- 49
+* -- 1012
+:= -- 631
+add.period$ -- 6
+call.type$ -- 8
+change.case$ -- 24
+chr.to.int$ -- 16
+cite$ -- 10
+duplicate$ -- 664
+empty$ -- 439
+format.name$ -- 78
+if$ -- 1204
 int.to.chr$ -- 1
-int.to.str$ -- 14
-missing$ -- 84
-newline$ -- 73
-num.names$ -- 15
-pop$ -- 251
+int.to.str$ -- 15
+missing$ -- 93
+newline$ -- 77
+num.names$ -- 18
+pop$ -- 294
 preamble$ -- 2
-purify$ -- 25
+purify$ -- 30
 quote$ -- 0
-skip$ -- 201
+skip$ -- 227
 stack$ -- 0
-substring$ -- 124
-swap$ -- 536
-text.length$ -- 12
+substring$ -- 137
+swap$ -- 604
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 10
-type$ -- 80
-warning$ -- 2
-while$ -- 23
+type$ -- 93
+warning$ -- 3
+while$ -- 25
 width$ -- 0
-write$ -- 101
-(There were 2 warnings)
+write$ -- 109
+(There were 3 warnings)
