@@ -43,7 +43,7 @@
 \date{\today}
 
 \begin{abstract}
-We   demonstrate the one-to-one correspondence between reparametrization invariant effective actions for relativistic  $p$-branes
+We demonstrate a bijection between reparametrization invariant effective actions for relativistic $p$-branes
 in flat target space and effective actions for transverse brane perturbations with non-linearly realized Poincar\'e symmetry.
 Starting with an action with non-linearly realized symmetry we construct the corresponding reparametrization invariant action by introducing
 St\"uckelberg fields. They combine with the transverse modes to form a Lorentz vector. The manifest Lorentz symmetry of the reparametrization invariant action
@@ -57,7 +57,7 @@ follows directly from the non-linearly realized Lorentz symmetry of the initial 
 \section{\label{sec:level1}Introduction}
 
 Confinement in quantum chromodynamics (QCD) arises due to the formation of
-gluonic flux tubes as is nicely visualized by lattice simulations (see, e.g., \cite{Bissey:2006bz}).
+gluonic flux tubes as is nicely visualized by lattice simulations (see, e.g., \cite{Teper:2009uf}).
 The dynamics of the transverse oscillations of a flux tube are
 described by the 2D effective field theory of a string. The leading term, known as the
 Nambu-Goto action, is simply the area of the dynamical, effectively two-dimensional surface
@@ -78,11 +78,13 @@ where the bulk metric is chosen to be $g_{\mu \nu} = \mathrm{diag}(-,+,\cdots,+)
 This reparametrization invariant worldsheet description is helpful in that we know all
 of the local geometric invariants of embedded 2D surfaces, thus we know the most general
 local action compatible with the Poincar\'e symmetry of the theory, as
-well as diffeomorphism invariance of the worldsheet. On the other hand, as with any gauge symmetry, the
+well as diffeomorphism invariance of the worldsheet. The fact that the most general action of an embedded 2D surface is a local functional of various
+contractions of the first fundamental form, as well as combinations of the second fundamental form and covariant derivatives thereof is presented concisely
+in the recent review on effective strings \cite{Aharony:2013ipa}. On the other hand, as with any gauge symmetry, the
 diffeomorphism invariance of the theory leaves us with a huge redundancy in our description and obscures the counting of physical degrees of freedom.
 The natural language to describe the string dynamics directly in terms of propagating degrees freedom  is that of Goldstone bosons
-(see, e.g., \cite{Dubovsky:2012sh} or \cite{Aharony:2013ipa} for a recent discussion of effective strings from this viewpoint). All of our discussion applies equally well for any $p$-brane, rather than just a string,
-so we consider this more general case in what follows.
+(see, e.g., \cite{Dubovsky:2012sh} or \cite{Aharony:2013ipa} for a recent discussion of effective strings from this viewpoint). All of our discussion
+applies equally well for any $p$-brane, rather than just a string, so we consider this more general case in what follows.
 A  straight $p$-brane spontaneously breaks the target space Poincar\'e group $ISO(1,D-1)$ down to the direct product of Poincar\'e
 transformations along the $p$-brane and rotations in the transverse hyperplane,
 $ISO(1,p)\times SO(D-p-1)$. The Goldstone Lagrangian can then be written
@@ -94,10 +96,14 @@ S =  \int d^{p + 1} \sigma (c_1 \partial_a X^i \partial^a X_i +
     c_3 (\partial_a X^i \partial_b X_i)(\partial^a X^j \partial^b X_j) + \cdots )\; , \nonumber
 \end{eqnarray}
 where $X^i$ are the dynamical degrees of freedom  corresponding to the $(D-p-1)$ transverse oscillations
-of the brane. Both transverse translations and off-diagonal generators of the target space
+of the brane. In principle, in the case of codimension one, one could consider a tadpole contribution to this action, similar to the case of the Dirac-Born-Infeld
+action discussed in equation (8) of \cite{deRham:2010eu}.  This linear term adds a forcing term to the equations of motion.  We are going to restrict our discussion
+to the case where the vacuum represents a static string where this term is not present. Another reason to neglect this term is that when deforming this theory via an
+external probe, this term breaks the shift symmetry of the Goldstone fields.
+
+Both transverse translations and off-diagonal generators of the target space
 Lorentz group are realized non-linearly. Non-linearly realized translations imply the shift invariance of the action (\ref{action}).
- Non-linearly realized rotations/boosts in the
-the $(aj)$ plane, where $a$ labels a hypersurface tangent to the $p$-brane and $j$ is normal to
+ Non-linearly realized rotations/boosts in the $(aj)$ plane, where $a$ labels a hypersurface tangent to the $p$-brane and $j$ is normal to
 this surface in the bulk, act as
 \begin{eqnarray}
 \label{NLboost}
@@ -106,8 +112,14 @@ this surface in the bulk, act as
 This transformation law implies an infinite number of relations between
 coefficients $c_i$ in front of the individual terms in the action (\ref{action}). This form of the transformation can be deduced by noticing that actions
 of the form (\ref{action}) can be obtained by fixing to the static gauge $X^a=\sigma^a$ in the reparametrization invariant action
-(\ref{diffaction}). Then the transformation (\ref{NLboost}) is a combination of a boost and a compensating
-diffeomorphism, required to satisfy the gauge condition.
+(\ref{diffaction}). This gauge condition fixes the induced metric on the world sheet to the form
+\begin{equation}
+    h_{ab} = \partial_a X^{\mu} \partial_b X_{\mu} \rightarrow \eta_{a b} + \partial_a X^i \partial_b X^j \delta_{i j}
+   \nonumber
+\end{equation}
+Then a linear boost/rotation on the fields $X^{\mu}$ must be followed by a compensating
+diffeomorphism of the coordinates $\sigma^a$ to restore the gauge condition.  The transformation (\ref{NLboost}) is the infinitesimal change in the
+Goldstone modes $X^i$ after expanding the scalar field around an infinitesimal diffeomorphism via Taylor's theorem.
 
 In principle, one may consider actions of the form (\ref{action}) invariant under (\ref{NLboost}) on its own  without any reference to  gauge fixing.
 It is natural to expect, however, that all of them can be obtained by gauge fixing some reparametrization invariant action
@@ -117,11 +129,19 @@ This expectation was challenged recently in Ref.~\cite{Gliozzi:2012cx}, where an
 to construct actions of the form (\ref{action}) invariant under (\ref{NLboost}) starting with an arbitrary monomial ``seed" term with a minimal number of $X^i$'s, invariant under
 $\delta^{aj}X^i= \delta^{ij}  \sigma^a $. It is convenient to use the ``scaling" ($\pd^n X^m \implies n-m$)
 of an operator to label operators that do not mix under (\ref{NLboost}).
-Initially, it was claimed that this way, already at scaling two, one may construct actions invariant under   (\ref{NLboost}), which do not correspond
-to any local geometric invariant. This claim was later revoked in \cite{Meineri:2013ew}, however the general question remains.
+Initially, it was claimed that this way one may construct actions invariant under (\ref{NLboost}), which do not correspond
+to any local geometric invariant. For example, at scaling two, two terms were found that in combination formed the Ricci scalar, however individually didn't
+seem to correspond to any geometric invariant. Later, it was shown that these terms were in fact local geometric invariants when the second fundamental form was included in the list
+of possible terms in the action. The existence claim of non-geometric terms was revoked in \cite{Meineri:2013ew}, however the general question remains.
+
+Before scaling two, there is also the question of a constant term in the Lagrangian, which exhibits Poincar\'e symmetry but isn't diff invariant.  From a two dimensional perspective
+this term is non-dynamical but as viewed as an embedded 2D surface in a higher dimensional spacetime, a constant term modifies the Poincar\'e algebra.  When perturbing our theory
+by coupling the worldsheet to some potential, this term has dynamical consequences, similar to the cosmological constant in general relativity.  However we do not consider this
+an independent term in the effective lagrangian because it's value is entirely fixed by the coefficient of the Nambu Goto term, namely by the string tension, similar
+to the constant term in the aforementioned DBI action \cite{deRham:2010eu}.
 
 The purpose of this note is to show that the natural expectation is correct and there is a one-to-one correspondence between $p$-brane actions
-of the form (\ref{diffaction}) and (\ref{action}). To achieve this we use the St\"uckelberg technique
+of the form (\ref{diffaction}) and (\ref{action}) modulo the aforementioned subtleties. To achieve this we use the St\"uckelberg technique
 to (re)introduce reparametrization invariance. We find that in the presence of the symmetry defined by
 (\ref{NLboost}) St\"uckelberg fields automatically provide the proper degrees of freedom to restore the
 manifest $D$-dimensional Poincar\'e invariance. That is, the non-linear invariance of the initial
@@ -154,7 +174,9 @@ which is the transformation rule for a scalar.
 As we show, these fields, when packaged with the physical transverse oscillations
 of the worldsheet, form a $D$-dimensional Lorentz vector,
 $X^{\mu}(\vec{\sigma}) \equiv (\xi^a(\vec{\sigma}),X^i(\vec{\sigma}))$.
-This proves the one-to-one correspondence between actions (\ref{diffaction}) and (\ref{action}).
+Thus we have an invertible procedure to take us from general actions exhibiting non-linear Poincar\'e symmetry, to an
+action for an embedded surface in D dimensional Minkowski spacetime.  Each diffeomorphism invariant action yields a non-linear
+action and vice versa, completing the bijection.
 
 %************************************************
 \section{The General Proof}
@@ -170,7 +192,13 @@ As explained above, it should be invariant under a non-linear Lorentz transforma
     \delta^{a j}_{NL} X^i(\vec{\sigma}) \nonumber = 0 \; , \nonumber
 \end{eqnarray}
 where $\delta^{aj}_{NL} X^i(\vec{\sigma})$ is given by equation (\ref{NLboost}).
-Our goal is to check that this symmetry translates into an invariance under linear Lorentz transformations after the
+Note, by writing the action in this form we implicitly ignore boundary contributions after integration by parts.
+The boundary terms generally will break spacetime symmetries, thus we expect the linear Poincar\'e symmetry to also
+not be restored in the St\"uckelberg action.  This discussion is about symmetries in the bulk action.  If the boundary
+satisfies some subgroup of the ambient non-linear spacetime symmetries, the linearity of these generators will be restored by the
+same argument.
+
+Our goal is to check that non-linear symmetry translates into an invariance under linear Lorentz transformations after the
 reparametrization invariance is (re)introduced via the St\"uckelberg technique.
 The  St\"uckelberg prescription is to replace the action with a new
 one defined as
@@ -225,7 +253,7 @@ of actions invariant under the non-linearly realized  Lorentz (\ref{NLboost}) an
 %****************************
 \section{A Concrete Example}
 %****************************
-Given the somewhat abstract nature of the general proof of the previous section, we feel it is instructve to follow in more details
+Given the somewhat abstract nature of the general proof of the previous section, we feel it is instructive to follow in more detail
  how the St\"uckelberg procedure works in a concrete example. For simplicity, let us consider the case when the action has scaling zero,
  {\it i.e.} the Lagrangian is a function of the first derivatives $\partial_c X^i$ only. The first step of the St\"uckelberg procedure
  results in an action of the form
@@ -249,6 +277,11 @@ This substitution leaves us with
    \mathcal{L}( J(\vec{\alpha})^c_b \partial_c X^i(\vec{\alpha}) )
      \; . \nonumber
 \end{eqnarray}
+An important thing to note here is that there is nothing non-local about this new Lagrangian.  The inverse
+Jacobian is a perfectly well defined derivative expansion.  Thus if one starts with a local Lagrangian in static gauge,
+the resulting Lagrangian after introducing St\"uckelberg fields will remain local, with no risk of introducing pathological
+terms discussed in \cite{Aharony:2011gb}.
+
 Let us check that this Lagrangian is invariant under linear Lorentz
 transformations on the vector $X^{\mu}(\vec{\alpha}) \equiv (\xi^a(\vec{\alpha}), X^i(\vec{\alpha}))$,
 provided the original  action is invariant under non-linear Lorentz transformations. Under  a rotation
@@ -389,6 +422,7 @@ whose solution is given by the invariant length of the worldline
 
 \section{Acknowledgments}
 I'd like to thank Sergei Dubovsky, Victor Gorbenko, Micha Gorelick, Kilian Walsh and Guido D'Amico for their valuable feedback and discussions on this topic.
+I'd also like to thank Marco Meineri for his helpful correspondence illuminating many subtleties.
 
 \bibliography{diffstueck}
 

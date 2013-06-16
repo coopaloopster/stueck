@@ -7,7 +7,7 @@
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
 \providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
-\begin{thebibliography}{6}%
+\begin{thebibliography}{8}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -51,21 +51,23 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{\citenamefont {Bissey}\ \emph {et~al.}(2007)\citenamefont {Bissey},
-  \citenamefont {Cao}, \citenamefont {Kitson}, \citenamefont {Signal},
-  \citenamefont {Leinweber} \emph {et~al.}}]{Bissey:2006bz}%
+\bibitem [{\citenamefont {Teper}(2009)}]{Teper:2009uf}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
-  {Bissey}}, \bibinfo {author} {\bibfnamefont {F.-G.}\ \bibnamefont {Cao}},
-  \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Kitson}}, \bibinfo
-  {author} {\bibfnamefont {A.}~\bibnamefont {Signal}}, \bibinfo {author}
-  {\bibfnamefont {D.}~\bibnamefont {Leinweber}},  \emph {et~al.},\ }\href
-  {\doibase 10.1103/PhysRevD.76.114512} {\bibfield  {journal} {\bibinfo
-  {journal} {Phys.Rev.}\ }\textbf {\bibinfo {volume} {D76}},\ \bibinfo {pages}
-  {114512} (\bibinfo {year} {2007})},\ \Eprint
-  {http://arxiv.org/abs/hep-lat/0606016} {arXiv:hep-lat/0606016 [hep-lat]}
-  \BibitemShut {NoStop}%
-%%CITATION = HEP-LAT/0606016;%%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Teper}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Acta
+  Phys.Polon.}\ }\textbf {\bibinfo {volume} {B40}},\ \bibinfo {pages} {3249}
+  (\bibinfo {year} {2009})},\ \Eprint {http://arxiv.org/abs/0912.3339}
+  {arXiv:0912.3339 [hep-lat]} \BibitemShut {NoStop}%
+%%CITATION = ARXIV:0912.3339;%%
+\bibitem [{\citenamefont {Aharony}\ and\ \citenamefont
+  {Komargodski}(2013)}]{Aharony:2013ipa}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Aharony}}\ and\ \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
+  {Komargodski}},\ }\href@noop {} {\  (\bibinfo {year} {2013})},\ \Eprint
+  {http://arxiv.org/abs/1302.6257} {arXiv:1302.6257 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1302.6257;%%
 \bibitem [{\citenamefont {Dubovsky}\ \emph {et~al.}(2012)\citenamefont
   {Dubovsky}, \citenamefont {Flauger},\ and\ \citenamefont
   {Gorbenko}}]{Dubovsky:2012sh}%
@@ -78,15 +80,17 @@
   (\bibinfo {year} {2012})},\ \Eprint {http://arxiv.org/abs/1203.1054}
   {arXiv:1203.1054 [hep-th]} \BibitemShut {NoStop}%
 %%CITATION = ARXIV:1203.1054;%%
-\bibitem [{\citenamefont {Aharony}\ and\ \citenamefont
-  {Komargodski}(2013)}]{Aharony:2013ipa}%
+\bibitem [{\citenamefont {de~Rham}\ and\ \citenamefont
+  {Tolley}(2010)}]{deRham:2010eu}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
-  {Aharony}}\ and\ \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont
-  {Komargodski}},\ }\href@noop {} {\  (\bibinfo {year} {2013})},\ \Eprint
-  {http://arxiv.org/abs/1302.6257} {arXiv:1302.6257 [hep-th]} \BibitemShut
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {de~Rham}}\ and\ \bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont
+  {Tolley}},\ }\href {\doibase 10.1088/1475-7516/2010/05/015} {\bibfield
+  {journal} {\bibinfo  {journal} {JCAP}\ }\textbf {\bibinfo {volume} {1005}},\
+  \bibinfo {pages} {015} (\bibinfo {year} {2010})},\ \Eprint
+  {http://arxiv.org/abs/1003.5917} {arXiv:1003.5917 [hep-th]} \BibitemShut
   {NoStop}%
-%%CITATION = ARXIV:1302.6257;%%
+%%CITATION = ARXIV:1003.5917;%%
 \bibitem [{\citenamefont {Gliozzi}\ and\ \citenamefont
   {Meineri}(2012)}]{Gliozzi:2012cx}%
   \BibitemOpen
@@ -114,4 +118,15 @@
   {http://arxiv.org/abs/hep-th/0409124} {arXiv:hep-th/0409124 [hep-th]}
   \BibitemShut {NoStop}%
 %%CITATION = HEP-TH/0409124;%%
+\bibitem [{\citenamefont {Aharony}\ and\ \citenamefont
+  {Dodelson}(2012)}]{Aharony:2011gb}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Aharony}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Dodelson}},\ }\href {\doibase 10.1007/JHEP02(2012)008} {\bibfield  {journal}
+  {\bibinfo  {journal} {JHEP}\ }\textbf {\bibinfo {volume} {1202}},\ \bibinfo
+  {pages} {008} (\bibinfo {year} {2012})},\ \Eprint
+  {http://arxiv.org/abs/1111.5758} {arXiv:1111.5758 [hep-th]} \BibitemShut
+  {NoStop}%
+%%CITATION = ARXIV:1111.5758;%%
 \end{thebibliography}%
